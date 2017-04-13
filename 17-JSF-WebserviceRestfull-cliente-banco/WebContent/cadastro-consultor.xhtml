@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+
+	<h1>Cadastro de Consultor da Natura</h1>
+	<h:messages>	
+	<h:form>
+		<div>
+			<h:outputLabel value="Nome" for="nome" />
+			<h:inputText value="#{consultorBean.consultor.nome}" id="nome" />
+		</div>
+		<div>
+			<h:outputLabel value="CPF" for="cpf" />
+			<h:inputText value="#{consultorBean.consultor.cpf}" id="cpf" />
+		</div>
+		<div>
+			<h:outputLabel value="Telefone" for="tel" />
+			<h:inputText value="#{consultorBean.consultor.telefone}" id="tel" />
+		</div>
+		<div>
+			<h:commandButton action="#{consultorBean.cadastrar()}" value="Cadastrar" />
+		</div>
+
+	</h:form>
+		</h:messages>
+
+
+</body>
+</html>
